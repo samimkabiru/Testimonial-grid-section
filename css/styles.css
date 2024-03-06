@@ -75,11 +75,52 @@ p {
 
 /* Blocks */
 .block {
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .container {
   max-width: 130rem;
   overflow: hidden;
   margin: auto;
+}
+
+/* Testimonial */
+.testimonial {
+  background: hsl(263, 55%, 52%);
+  border-radius: 0.7rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial__heading {
+  color: hsl(0, 0%, 100%);
+  padding: 2.5rem;
+}
+
+.testimonial__text {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.testimonial__media,
+.testimonial__text {
+  perspective: 0.5rem;
+  transform: translateZ(0.2rem);
+}
+
+.testimonial__body {
+  padding: 0 2.5rem 2.5rem;
+}
+
+.testimonial__quote-image {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonial__quote-image {
+    right: 7rem;
+  }
 }
