@@ -72,3 +72,14 @@ p {
 .quote::after {
   content: close-quote;
 }
+
+/* Blocks */
+.block {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 130rem;
+  overflow: hidden;
+  margin: auto;
+}
