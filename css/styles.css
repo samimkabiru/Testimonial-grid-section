@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* Typography */
+
 html {
   font-size: 62.5%;
 }
@@ -15,11 +17,48 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.6rem;
+  margin: 0 0 0.3rem;
   font-weight: 500;
 }
 
 p {
   margin: 0;
+}
+
+/* Media-object */
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.media__image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+
+.media__image--primary {
+  border: 0.25rem solid hsl(263, 55%, 69%);
+}
+
+.media__image--secondary {
+  border: 0.25rem solid hsl(0, 0%, 81%);
+}
+
+.media__image--accent {
+  border: 0.25rem solid hsl(263, 55%, 52%);
+}
+
+.media__content {
+  margin-left: 1.5rem;
+}
+
+.media__heading,
+.media__verification {
+  color: hsl(210, 46%, 95%);
+}
+
+.media__verification {
+  opacity: 0.5;
 }
